@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img {
+  height: 8rem;
+  width: 8rem;
+  border: 10px solid rgba(255, 196, 0, 0.6);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  color: #391f5b;
+}
+
+.name {
+  color: rgba(9, 0, 12, 0.84);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popularity {
+  color: rgba(255, 196, 0, 0.6);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+table {
+  margin: auto;
+}
+
+thead {
+  color: #391f5b;
+  font-size: 20px;
+}
+
+th {
+  padding: 2rem;
+}
+
+.btn-block {
+  background-color: initial;
+  background-image: linear-gradient(
+    rgba(179, 132, 201, 0.84),
+    rgba(57, 31, 91, 0.84) 50%
+  );
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 8px;
+  margin: 0 13px;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 10px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.btn-block:hover {
+  background-image: linear-gradient(#b384c9, #391f5b 50%);
+}
+
+.btn-delete {
+  background-color: initial;
+  background-image: linear-gradient(rgb(221, 17, 71), rgb(233, 86, 169) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 8px;
+  margin: 0 13px;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 10px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.btn-delete:hover {
+  background-image: linear-gradient(rgb(221, 17, 71), rgb(233, 86, 169) 50%);
 }
