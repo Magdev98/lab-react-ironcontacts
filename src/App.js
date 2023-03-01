@@ -30,14 +30,14 @@ function App() {
     setContacts(copy);
   };
 
-  // Iteration 4 - Sort by popularity
+  // Iteration 4 | Sort by popularity
   const handleSortPopularity = () => {
     const copy = [...contactsList];
     copy.sort((a, b) => b.popularity - a.popularity);
     setContacts(copy);
   };
 
-  // Iteration 4 - Sort by name
+  // Iteration 4 | Sort by name
   const handleSortName = () => {
     const copy = [...contactsList];
     copy.sort((a, b) => {
@@ -54,7 +54,7 @@ function App() {
     setContacts(copy);
   };
 
-  // Iteration 5 - Remove contacts
+  // Iteration 5 | Remove contacts
   const handleDeleteContacts = (id) => {
     const newActorList = contactsList.filter((contact) => contact.id !== id);
     setContacts(newActorList);
