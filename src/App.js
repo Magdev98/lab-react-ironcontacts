@@ -8,6 +8,7 @@ const firstFive = unusedContacts.splice(0, 5);
 function App() {
   const [contactsList, setContacts] = useState(firstFive);
 
+  // Iteration 3 | Add New Random Contacts
   const handleAddContacts = () => {
     if (!unusedContacts.length) {
       return;
@@ -29,7 +30,7 @@ function App() {
     setContacts(copy);
   };
 
-  // Iteration 4 - Sort by name
+  // Iteration 4 - Sort by popularity
   const handleSortPopularity = () => {
     const copy = [...contactsList];
     copy.sort((a, b) => b.popularity - a.popularity);
@@ -53,8 +54,7 @@ function App() {
     setContacts(copy);
   };
 
-  // Iteration 5 - Delete an actor
-
+  // Iteration 5 - Remove contacts
   const handleDeleteContacts = (id) => {
     const newActorList = contactsList.filter((contact) => contact.id !== id);
     setContacts(newActorList);
@@ -86,6 +86,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
+          {/* Iteration 1 | Display 5 Contacts */}
           {contactsList.map((contact) => {
             return (
               <tr key={contact.id}>
@@ -96,7 +97,8 @@ function App() {
                 <td className="popularity">
                   {Math.round(contact.popularity * 100) / 100}
                 </td>
-                {/* Update the list and add two more columns "Won an Oscar" and "Won an Emmy", 
+                {/* Iteration 2 | Conditionally Display Awards Info
+                Update the list and add two more columns "Won an Oscar" and "Won an Emmy", 
                 at the end of the table. 
                 Then, depending on the value wonOscar and wonEmmy of each contact, 
                 conditionally render a trophy icon 🏆/ 🌟 or no content. */}
